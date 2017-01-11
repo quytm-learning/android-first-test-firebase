@@ -128,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         User user = new User(edtId.getText().toString(), edtUsername.getText().toString(), edtEmail.getText().toString());
                         addNewUser(user);
+//                        addNewUserPush(user);
                     }
                 });
                 dialog.setNegativeButton("Cancel", null);
@@ -142,6 +143,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void addNewUser(User user){
         mDatabase.child(user.uid).setValue(user);
+    }
+    private void addNewUserPush(User user){
+        mDatabase.child(user.uid).push().setValue(user);
     }
 
     public void deleteUser(User user) {

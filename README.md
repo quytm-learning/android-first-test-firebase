@@ -101,7 +101,8 @@ public class User {
 }
 ```
 
-- Ta thêm, sửa dữ liệu thông qua hàm ....child(name).setValue(data)
+- Ta thêm thông qua hàm ....child(name).setValue(data)
+- Khi thêm dữ liệu, nếu key trùng với một key có sẵn thì nó sẽ bị ghi đè nếu ta sử dụng hàm setValue. Để tránh trường hợp bị ghi đè, ta sử dụng thêm push: ...push().setValue(...), khi đó, hệ thống sẽ tự tạo thêm key random để thêm vào ;
 - Nếu sử dụng setValue cho key có sẵn, dữ liệu sẽ bị overwrite, để khắc phục, ta sử dụng hàm updateChildren(HashMap), và nó chỉ thêm các thuộc tính mới, còn thuộc tính cũ được giữ nguyên. Chú ý, tham số kiểu HashMap<k, v>  thì k có thể sử dụng theo kiểu đường dẫn, Eg: "/post/", "/post/details/", ...
 - Xóa dữ liêu: removeValue, hoặc sử dụng giá trị null cho hàm setValue hoặc updateChildren.
 - Lưu dữ liệu theo kiểu Transaction: bao gồm 2 giai đoạn: doTransaction và doComplete 
@@ -116,7 +117,11 @@ public class User {
 
 ## 3. Khả năng lưu trữ offline
 
-...
+- DB lưu trữ offline, có thể truy cập.
+
+## 4. Tự động backup
+
+- Chỉ sử dụng trong bản trả phí.
 
 
 # III. Authentication
