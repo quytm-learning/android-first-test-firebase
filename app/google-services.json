@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "785495644629",
+    "firebase_url": "https://first-test-20041.firebaseio.com",
+    "project_id": "first-test-20041",
+    "storage_bucket": "first-test-20041.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785495644629:android:19b582e999dec705",
+        "android_client_info": {
+          "package_name": "com.epay.tmq.firsttestfb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785495644629-sm5i6jqrardk0c77nrhde3tvvgm0pocf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.epay.tmq.firsttestfb",
+            "certificate_hash": "7E938F9FDE0B7A3E43C4B48F757355DFA0189843"
+          }
+        },
+        {
+          "client_id": "785495644629-50ahdap7c1j8jiqn51cepo6ccr6kp9l8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVpMMrGQGVQi5ORqHeoHuRcKp07-jacsA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785495644629-50ahdap7c1j8jiqn51cepo6ccr6kp9l8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
