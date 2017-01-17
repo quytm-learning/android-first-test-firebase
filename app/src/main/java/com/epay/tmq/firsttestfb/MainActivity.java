@@ -52,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void eventDatabase() {
+//        User user = new User("1", "quytm_58", "quytm_58@vnu.edu.vn");
+//        mDatabase.push().setValue(user);
 
         mDatabase.addValueEventListener(new ValueEventListener() {
             @Override
@@ -74,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 User user = dataSnapshot.getValue(User.class);
-                Log.i(TAG, "onChildAdded ... " + user.username);
+                Log.i(TAG, "onChildAdded ... " + user.username + ", key = " + dataSnapshot.getKey() + ", previous = " + s);
                 adapter.addItem(user);
             }
 
